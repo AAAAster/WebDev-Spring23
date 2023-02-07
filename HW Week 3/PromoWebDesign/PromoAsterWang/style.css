@@ -1,0 +1,19 @@
+body {
+	background-color: black;
+	margin: 20px;
+}
+
+h1 {
+	text-align: center;
+	color: rgb(242,192,86);
+}
+
+p {
+	color:white;
+}
+
+
+p.leftStyle {
+	text-align: right;
+	color:rgb(250,250,250);
+}
