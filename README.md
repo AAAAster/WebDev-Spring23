@@ -1,2 +1,3 @@
 # WebDev-Spring23
-Folder for DM-UY2193 Intro to web design
+Hi! this folder for DM-UY2193 Intro to web design class~~
+The different folder below indicate to different project. Please go throw them.
