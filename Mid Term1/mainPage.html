@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Aster's Stuido</title>
+		<link rel="stylesheet" media="screen and (min-width:1100px)" type="text/css" href="CSS/style1.css">
+		<link rel="stylesheet" media="screen and (max-width:1100px)" type="text/css" href="CSS/style2.css">
+	</head>
+	<body>
+		<header>
+			<p id="scroll-to-top">老鼠影业</p>
+			<script>
+				const scrollToTopElement = document.getElementById('scroll-to-top');
+				scrollToTopElement.addEventListener('click', function() {
+					window.scrollTo({
+						top: 0,
+						behavior: 'smooth'
+					});
+				});
+			</script>
+			<nav>
+				<ul>
+					<li><a href="#">Creative collection</a></li>
+					<li><a href="#">Equipment lease</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="bkimage">
+			<div class="container-center">
+				<h1>Your<br/>Professional</h1>
+				<h2>Solutions</h2>
+
+
+
+
+
+
+				<div class="slider1">
+  					<div class="slider1-container">
+    					<div class="slider1-item item1">
+      						<p id="item1"><a href="#target1" onclick="scrollToTarget()">Video</a></p>
+    					</div>
+    					<div class="slider1-item item2">
+      						<p id="item2">Photo</p>
+    					</div>
+    					<div class="slider1-item item3">
+      						<p id="item3">Film Production</p>
+    					</div>
+  					</div>
+				</div>
+				<script>
+					let slider = document.querySelector('.slider1');
+					let isDown = false;
+					let startX;
+					let scrollLeft;
+
+					slider.addEventListener('mousedown', (e) => {
+						isDown = true;
+						slider.classList.add('active');
+						startX = e.pageX - slider1.offsetLeft;
+						scrollLeft = slider1.scrollLeft;
+					});
+
+					slider.addEventListener('mouseleave', () => {
+						isDown = false;
+						slider.classList.remove('active');
+					});
+
+					slider.addEventListener('mouseup', () => {
+						isDown = false;
+						slider.classList.remove('active');
+					});
+
+					slider.addEventListener('mousemove', (e) => {
+						if (!isDown) return;
+						e.preventDefault();
+						const x = e.pageX - slider1.offsetLeft;
+						const walk = (x - startX) * 3; // 控制拖动速度
+						slider.scrollLeft = scrollLeft - walk;
+					});
+				</script>
+
+
+
+
+
+
+
+
+
+				<h3>· · · · slide · · · ·</h3>
+
+
+
+
+
+
+
+
+				<div class="box1">
+  					<div class="box-inner">
+    					<h4>Professional Production Team</h4>
+  					</div>
+				</div>
+
+				<div class="box1">
+ 					 <div class="box-inner">
+   						 <h4>Advanced Lighting Effects</h4>
+ 				 	</div>
+				</div>
+
+				<div class="box1">
+  					<div class="box-inner">
+    					<h4>Convenient shooting Locations</h4>
+  					</div>
+				</div>
+
+				<div class="box1">
+  					<div class="box-inner">
+   						 <h4>Industry standard form of delivery</h4>
+ 					 </div>
+				</div>
+
+				<div class="box2">
+					<div class="box-inner">
+						<h6>All-inclusive shooting and creation services<br/>UP to</h6>
+						<h5>   5,788 USD</h5>
+					</div>
+					<img src="pic/pic3.png">
+				</div>
+
+
+
+
+		<div class="container2">
+			<div class="box5" id="target1">
+				<p>Video</p>
+				<p id="small-text1">Unforgettable sudden This short show tells the story of a girl who gradually recovers from a failed relationship.</p>
+			</div>
+			<div class="box5" id="target2">
+				<p>Photo</p>
+				<p id="small-text1">Eva’s Birthday</p>
+			</div>
+			<div class="box5" id="target3">
+				<p>Film  Production</p>
+				<p id="small-text1">Film Production set of The Last Supper</p>
+
+			</div>
+		</div>
+				
+
+
+
+
+
+			</div>
+		</div>
+
+
+		
+
+
+		
+
+
+	</body>
+</html>
