@@ -1,0 +1,31 @@
+/* color valuables */
+:root {
+  --black:#000000;
+  --white:#FFFFFF;
+  --light-white:#F9F9F9;
+  --middle-grey:#CCC;
+  --dark-grey:#444;
+  --light-grey:#DDDDDD;
+  --background-nav:rgb(21,21,21);
+
+  --电子蓝: #2196F3;
+  --绿色荧光: #4CAF50;
+  --紫色星光: #7E57C2;
+  --机械灰: #9E9E9E;
+  --橙色能量: #FF9800;
+  --红色警报: #E53935;
+  --银白闪光: #BDBDBD;
+  --深空蓝: #1565C0;
+
+  --engineering-blue: #2C3E50;
+  --engineering-gray: #95A5A6;
+  --photography-turquoise: #1ABC9C;
+  --photography-orange: #E67E22;
+  --cinema-purple: #9B59B6;
+  --cinema-dark-blue-black: #34495E;
+  --diving-ocean-blue: #2980B9;
+  --diving-emerald-green: #16A085;
+
+
+
+}
